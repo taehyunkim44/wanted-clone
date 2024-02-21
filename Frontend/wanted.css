@@ -51,6 +51,10 @@ button {
   border: none;
 }
 
+main section article {
+  margin: 0 100px;
+}
+
 main section article ul {
   display: flex;
   flex-direction: row;
@@ -72,4 +76,53 @@ main section article ul li a p {
   color: rgba(55, 56, 60, 0.61);
   font-weight: 500;
   line-height: 18px;
+}
+
+.banner-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner-box {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.banner-box li {
+  display: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.banner-box li:first-child {
+  display: block;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-list li {
+  margin: 0 5px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
 }
