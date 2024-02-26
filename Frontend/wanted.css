@@ -127,11 +127,64 @@ main section article ul li a p {
   margin: 0 5px;
 }
 
-button {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  cursor: pointer;
+.homework {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homework div {
+  display: flex;
+}
+
+.banner-container {
+  overflow: hidden;
+}
+
+.banner-container ul {
+  display: flex;
+}
+
+.banner-container ul li {
+  margin-right: 20px;
+}
+
+.homework-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homework-list {
+  display: flex;
+  gap: 50px;
+}
+
+.homework-list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-list {
+  padding: 0 16px;
+  margin: 0;
+  border: 0;
+}
+
+.work-items > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-img {
+  width: 50px;
+  height: 50px;
 }
 
 footer {
