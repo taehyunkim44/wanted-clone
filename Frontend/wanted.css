@@ -151,40 +151,62 @@ main section article ul li a p {
 
 .homework-wrap {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.homework-list {
+.homework-items {
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
 }
 
-.homework-list > div {
+.homework-items div {
+  flex: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+}
+
+.work-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.work-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
 }
 
 .work-items {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 
-.work-list {
-  padding: 0 16px;
-  margin: 0;
-  border: 0;
-}
-
-.work-items > div {
+.work-items > div:first-child {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.work-items > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .work-img {
-  width: 50px;
-  height: 50px;
+  width: 110px;
+  height: auto;
 }
 
 footer {
