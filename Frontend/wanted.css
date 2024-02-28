@@ -151,6 +151,7 @@ main section article ul li a p {
 
 .homework-wrap {
   display: flex;
+  justify-content: space-between;
 }
 
 .homework-items {
@@ -173,7 +174,7 @@ main section article ul li a p {
 .work-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -207,6 +208,39 @@ main section article ul li a p {
 .work-img {
   width: 110px;
   height: auto;
+}
+
+.thema {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.thema-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.thema-items {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+}
+
+.thema-item {
+  margin-right: 20px;
+}
+
+.thema-item:last-child {
+  margin-right: 0;
+}
+
+.thema-img {
+  width: 300px;
+  height: 200px;
 }
 
 footer {
