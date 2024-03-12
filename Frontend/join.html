@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./join.css" />
+    <script src="./join.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>원티드에 오신 것을 환영합니다</h1>
+      <div>
+        <fieldset>
+          <legend>이름</legend>
+          <div>
+            <input type="text" placeholder="이름(실명)을 입력해주세요" />
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>이메일</legend>
+          <div>
+            <input type="email" placeholder="example@wanted.com" />
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>비밀번호</legend>
+          <div>
+            <input
+              type="password"
+              placeholder="영문+숫자 조합 8자리 이상 입력해주세요"
+            />
+          </div>
+        </fieldset>
+      </div>
+      <section>
+        <div>
+          <label><span>약관 전체 동의</span><input type="checkbox" /></label>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <label
+                ><p><span>만 14세 이상입니다</span><span>(필수)</span></p>
+                <input type="checkbox"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><p><span>이용약관 동의</span><span>(필수)</span></p>
+                <input type="checkbox"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><p>
+                  <span>개인정보 수집 및 이용동의</span><span>(필수)</span>
+                </p>
+                <input type="checkbox"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><p>
+                  <span>선택정보 수집 및 이용 동의</span><span>(선택)</span>
+                </p>
+                <input type="checkbox"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><p>
+                  <span>개인정보 마케팅 활용 동의</span><span>(선택)</span>
+                </p>
+                <input type="checkbox"
+              /></label>
+            </li>
+            <li>
+              <label
+                ><p><span>마케팅 알림 수신 동의</span><span>(선택)</span></p>
+                <input type="checkbox"
+              /></label>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div>
+        <button type="submit"><span>회원가입</span></button>
+      </div>
+      <div>
+        <a href="#">기업으로 가입하시나요?</a>
+      </div>
+    </div>
+  </body>
+</html>
