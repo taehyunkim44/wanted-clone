@@ -17,12 +17,12 @@
             style="width: 112px; height: 80px"
         /></a>
         <ul>
-          <li><a href="">채용</a></li>
-          <li><a href="">커리어</a></li>
-          <li><a href="">소셜</a></li>
-          <li><a href="">이력서</a></li>
-          <li><a href="">프리렌서</a></li>
-          <li><a href="">더보기</a></li>
+          <li><a href="#">채용</a></li>
+          <li><a href="#">커리어</a></li>
+          <li><a href="#">소셜</a></li>
+          <li><a href="#">이력서</a></li>
+          <li><a href="#">프리렌서</a></li>
+          <li id="more">더보기</li>
         </ul>
         <aside>
           <ul>
@@ -42,6 +42,13 @@
           </ul>
         </aside>
       </nav>
+      <div id="moreMenu">
+        <ul>
+          <li><a href="#">메뉴 1</a></li>
+          <li><a href="#">메뉴 2</a></li>
+          <li><a href="#">메뉴 3</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section>
@@ -495,10 +502,10 @@
         <article>
           <div>
             <aside class="thema">
-              <h4>테마로 모아보기</h4>
+              <h4>#테마로 모아보기</h4>
               <div>
-                <button class="prev" onclick="">&lt</button>
-                <button class="next" onclick="">&gt</button>
+                <button class="prev" onclick="prevSlide2()">&lt</button>
+                <button class="next" onclick="nextSlide2()">&gt</button>
               </div>
             </aside>
             <div class="thema-container">

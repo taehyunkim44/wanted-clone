@@ -45,6 +45,19 @@ header nav aside ul {
   padding: 0;
 }
 
+
+#moreMenu {
+  display: none; 
+  width: 100%; 
+  background-color: #f9f9f9;
+  position: absolute;
+}
+
+#more:hover + #moreMenu, #moreMenu:hover {
+  display: block;
+}
+
+
 button {
   background-color: white;
   border: 1px solid #ccc;
@@ -53,6 +66,7 @@ button {
   cursor: pointer;
   white-space: nowrap;
 }
+
 
 #svg-button {
   border: none;
@@ -210,6 +224,7 @@ main section article ul li a p {
   height: auto;
 }
 
+
 .thema {
   display: flex;
   align-items: center;
@@ -225,8 +240,9 @@ main section article ul li a p {
 
 .thema-items {
   display: flex;
-  justify-content: space-between;
-  flex: 1;
+  flex-direction: row;
+  width: 100%;
+  margin-right: 10px;
   padding: 10px;
 }
 
