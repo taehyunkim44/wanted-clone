@@ -1,82 +1,45 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const more = document.getElementById('more');
-    const moreMenu = document.getElementById('moreMenu');
+// JavaScript로 배너 슬라이드 구현
+const bannerItems = document.querySelectorAll(".Banner_Item");
+const bannerButtons = document.querySelectorAll(".Main_bannerDots button");
 
-    more.addEventListener('mouseover', function() {
-        moreMenu.style.display = 'block';
-    });
-
-    // 마우스가 moreMenu 위에 있을 때도 메뉴가 사라지지 않도록 처리
-    moreMenu.addEventListener('mouseleave', function() {
-        moreMenu.style.display = 'none';
-    });
-
-    // 선택적: 마우스가 more에서 벗어났을 때도 처리
-    more.addEventListener('mouseleave', function(e) {
-        if (!moreMenu.contains(e.relatedTarget)) {
-            moreMenu.style.display = 'none';
-        }
-    });
+// 버튼 클릭 시 배너 표시
+bannerButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    showBanner(index);
+  });
 });
-
-
-
-function showBanner(index) {
-  var banners = document.querySelectorAll(".banner-box li");
-  var buttons = document.querySelectorAll(".button-list button");
-
-  // 모든 배너 숨기기
-  banners.forEach(function (banner) {
-    banner.style.display = "none";
-  });
-
-  // 클릭한 버튼에 해당하는 배너 보이기
-  banners[index - 1].style.display = "block";
-
-  // 모든 버튼 스타일 초기화
-  buttons.forEach(function (button) {
-    button.style.backgroundColor = "#fff";
-  });
-
-  // 클릭한 버튼 스타일 변경
-  buttons[index - 1].style.backgroundColor = "#ccc";
-}
-
-// 재택근무 부분
 
 let currentIndex = 0;
 
-function showSlide() {
-  const slides = document.querySelectorAll(".homework-items");
-  slides.forEach((slide, index) => {
-    if (index === currentIndex) {
-      slide.style.display = "flex";
+function showBanner(index) {
+  bannerItems.forEach((item, i) => {
+    if (i === index) {
+      item.style.display = "block";
+      bannerButtons[i].classList.add("active"); // 해당 버튼 활성화
     } else {
-      slide.style.display = "none";
+      item.style.display = "none";
+      bannerButtons[i].classList.remove("active"); // 나머지 버튼 비활성화
     }
   });
 }
 
-function prevSlide() {
-  currentIndex = currentIndex === 0 ? 2 : currentIndex - 1;
-  showSlide();
+// 초기에 첫 번째 배너 표시
+showBanner(currentIndex);
+
+// 일정 간격으로 다음 배너 표시
+setInterval(nextBanner, 3000);
+
+function nextBanner() {
+  currentIndex = (currentIndex + 1) % bannerItems.length;
+  showBanner(currentIndex);
 }
 
-function nextSlide() {
-  currentIndex = currentIndex === 2 ? 0 : currentIndex + 1;
-  showSlide();
-}
-
-window.addEventListener("load", showSlide);
-
-
-
-// 테마로 모아보기 부분
+// 재택근무 부분
 
 let currentIndex2 = 0;
 
-function showSlide2() {
-  const slides = document.querySelectorAll(".thema-items");
+function showSlide() {
+  const slides = document.querySelectorAll(".Homework_Items");
   slides.forEach((slide, index) => {
     if (index === currentIndex2) {
       slide.style.display = "flex";
@@ -86,14 +49,12 @@ function showSlide2() {
   });
 }
 
-function prevSlide2() {
+function prevSlide() {
   currentIndex2 = currentIndex2 === 0 ? 2 : currentIndex2 - 1;
-  showSlide2();
+  showSlide();
 }
 
-function nextSlide2() {
+function nextSlide() {
   currentIndex2 = currentIndex2 === 2 ? 0 : currentIndex2 + 1;
-  showSlide2();
+  showSlide();
 }
-
-window.addEventListener("load", showSlide2);
