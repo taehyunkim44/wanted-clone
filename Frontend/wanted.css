@@ -696,6 +696,294 @@ hr {
   margin: 0;
 }
 
+.Work_Section {
+  margin-top: 72px;
+}
+
+.Work_Aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Work_Aside > a > h4 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.0194em;
+  line-height: 30px;
+  margin: 0;
+}
+
+.Work_Aside > div {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  height: 100%;
+}
+
+.Work_Aside > div > a {
+  color: rgba(55, 56, 60, 0.61) !important;
+  position: relative;
+  padding: 4px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.Work_Container {
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+.Work_Container > div {
+  outline: none;
+  width: calc(100% / 3);
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.Work_List {
+  padding: 0 16px;
+}
+
+.Work_Items {
+  list-style: none;
+}
+
+.Work_DivContainer {
+  position: relative;
+  gap: 4px;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+}
+
+.Work_DivContainer > button {
+  padding: 7px 14px;
+  min-width: 48px;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  --button-color: #171719;
+  color: var(--button-color);
+  background-color: #fff;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: normal;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.Work_Div {
+  flex: 1 1;
+  gap: 12px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+}
+
+.Work_Div > img {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  outline: 1px solid rgba(23, 23, 25, 0.05);
+  outline-offset: -1px;
+  border-radius: 12px;
+}
+
+.Work_Div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.Work_Div > div > p {
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #171719;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.0057em;
+  line-height: 24px;
+  margin: 0;
+}
+
+.Work_Div > div > span {
+  color: rgba(55, 56, 60, 0.61);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.0252em;
+  line-height: 16px;
+  display: block;
+  margin: 0;
+}
+
+.Thema {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Thema > h4 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.0194em;
+  line-height: 30px;
+  margin: 0;
+}
+
+.Thema_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Thema_Items {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.Thema_Item {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none !important;
+  width: 2820px;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  left: 0;
+  top: 0;
+}
+
+.Thema_Container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Thema_Container > img {
+    min-height: 196.15px;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+.Thema_Container > img {
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  will-change: auto;
+  min-height: 196.15px;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 25 / 16;
+  display: block;
+}
+
+.Thema_Container > h6 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: calc(100% - 40px);
+  color: #fff;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.35);
+  font-size: 18px;
+  letter-spacing: -0.002em;
+  line-height: 26px;
+  margin: 0;
+}
+
+.Thema_Item:last-child {
+  margin-right: 0;
+}
+
+.Thema_Img {
+  width: 300px;
+  height: 200px;
+}
+
+.Img_Container {
+  padding: 20px;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  border: 1px solid gainsboro;
+}
+
+.Img_Container > div {
+  max-height: 32px;
+  display: flex;
+}
+
+.Img_Container > div > img {
+  z-index: 5;
+  margin-left: 0;
+  display: block;
+  outline: 1px solid hsla(0, 0%, 9%, 0.08);
+  outline-offset: -1px;
+  border-radius: 6px;
+  margin-right: 6px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.Img_Container > span {
+  color: rgba(55, 56, 60, 0.61);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.0194em;
+  line-height: 18px;
+  margin: 0;
+}
+
 .Main_Footer {
   width: 100%;
   padding: 40px 0 16px;

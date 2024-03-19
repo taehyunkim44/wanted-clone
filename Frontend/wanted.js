@@ -58,3 +58,30 @@ function nextSlide() {
   currentIndex2 = currentIndex2 === 2 ? 0 : currentIndex2 + 1;
   showSlide();
 }
+
+// 테마로 모아보기 부분
+
+let currentIndex3 = 0;
+
+function showSlide2() {
+  const slides = document.querySelectorAll(".Thema_Items");
+  slides.forEach((slide, index) => {
+    if (index === currentIndex3) {
+      slide.style.display = "flex";
+    } else {
+      slide.style.display = "none";
+    }
+  });
+}
+
+function prevSlide2() {
+  currentIndex3 = currentIndex3 === 0 ? 2 : currentIndex3 - 1;
+  showSlide2();
+}
+
+function nextSlide2() {
+  currentIndex3 = currentIndex3 === 2 ? 0 : currentIndex3 + 1;
+  showSlide2();
+}
+
+window.addEventListener("load", showSlide2);
